@@ -1,0 +1,25 @@
+include ./mixins
+.form-container
+    .form-header
+        span#close.close x
+        .title
+            h2 Обратный звонок
+            p Мы перезвоним в удобное время
+                br
+                | и обсудим лучшее решение
+                br
+                | для вашего бизнеса
+    form(action="" id="form" name="form")
+        +input("name", "your-name", "Введите ваше имя", "text")
+        +input("phone", "your-phone", "Номер телефона", "tel")
+        p Когда вам будет удобно ответить
+            br
+            | на наш звонок?
+        .form-group-hours
+            .error
+            +inputRadio("half-minute", "30 секунд")
+            +inputRadio("one-hour", "1 час")
+            +inputRadio("ten-minutes", "10 минут")
+            +inputRadio("three-hours", "3 часа")
+        input(type="submit" value="Отправить" class="send")
+

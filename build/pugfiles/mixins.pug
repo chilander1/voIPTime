@@ -1,0 +1,13 @@
+mixin input(class1, name, placeholder, type)
+    .form-group-text(class=class1)
+        label(for=name)
+            .error
+            input(type=type id=name maxlength="20" required)
+            span=placeholder
+
+
+mixin inputRadio(id, text)
+    label(for=id)
+        input(type="radio" id=id value=id name="hours")
+        span
+        =text

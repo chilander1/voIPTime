@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front end position test task</title>
+    <link rel="stylesheet" href="css/styles.min.css">
+  </head>
+  <body>
+    <div class="form-container">
+      <div class="form-header"><span class="close" id="close">x</span>
+        <div class="title">
+          <h2>Обратный звонок</h2>
+          <p>Мы перезвоним в удобное время<br>и обсудим лучшее решение<br>для вашего бизнеса</p>
+        </div>
+      </div>
+      <form action="" id="form" name="form">
+            <div class="form-group-text name">
+              <label for="your-name">
+                <div class="error"></div>
+                <input type="text" id="your-name" maxlength="20" required><span>Введите ваше имя</span>
+              </label>
+            </div>
+            <div class="form-group-text phone">
+              <label for="your-phone">
+                <div class="error"></div>
+                <input type="tel" id="your-phone" maxlength="20" required><span>Номер телефона</span>
+              </label>
+            </div>
+        <p>Когда вам будет удобно ответить<br>на наш звонок?</p>
+        <div class="form-group-hours">
+          <div class="error"></div>
+              <label for="half-minute">
+                <input type="radio" id="half-minute" value="half-minute" name="hours"><span></span>30 секунд
+              </label>
+              <label for="one-hour">
+                <input type="radio" id="one-hour" value="one-hour" name="hours"><span></span>1 час
+              </label>
+              <label for="ten-minutes">
+                <input type="radio" id="ten-minutes" value="ten-minutes" name="hours"><span></span>10 минут
+              </label>
+              <label for="three-hours">
+                <input type="radio" id="three-hours" value="three-hours" name="hours"><span></span>3 часа
+              </label>
+        </div>
+        <input class="send" type="submit" value="Отправить">
+      </form>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
