@@ -19,8 +19,8 @@ $(document).ready(function () {
         };
 
         if (!isValid($("#your-name").val(), regex1)) {
-            errorMessage = " Please enter a valid email address, ";
-            $('.name .error').html("Please enter a valid email address");
+            errorMessage = " Please enter a valid Name, ";
+            $('.name .error').html("Please enter a valid Name");
             $("#your-name").addClass('error-shadow');
         } else {
             $('.name .error').html("");
@@ -42,7 +42,7 @@ $(document).ready(function () {
             $('.form-group-hours .error').html("");
         }
         if (errorMessage == "") {
-            console.log("success");
+            console.log("success!!!");
             console.log($("#your-name").val());
             console.log($("#your-phone").val());
             console.log($("input[type=radio]:checked").val());
