@@ -1,7 +1,7 @@
 mixin input(class1, name, placeholder, type)
     .form-group-text(class=class1)
         label(for=name)
-            .error
+            span.error
             input(type=type id=name maxlength="20" required)
             span=placeholder
 
