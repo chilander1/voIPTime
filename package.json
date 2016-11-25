@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "keywords": [],
-  "author": "Andrew",
+  "author": "Andrew Chmil",
   "license": "ISC",
   "dependencies": {
     "gulp": "*",
